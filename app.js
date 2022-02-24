@@ -15,6 +15,7 @@ $("#form").submit(function(event) {
     const value = $("#input").val()
     countryName.innerHTML = value
     requestApi(`${api}${value}`)
+    main.classList.add('hidden')
 })
 
 async function requestApi(url) {

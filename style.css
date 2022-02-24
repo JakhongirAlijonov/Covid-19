@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+body {
+    font-family: 'Bebas Neue', display;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: #ff1b36;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-item {
+    list-style: none;
+    margin-left: 25px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #555;
+    transition: .3s ease;
+    letter-spacing: 1.5px;
+}
+
+.header-link:hover {
+    color: #ff1b36;
+}
+
+.mains-section {
+    text-align: center;
+}
+
+#input {
+    width: 250px;
+}
+
+#input,
+#searchBtn {
+    border-radius: 8px;
+    padding: 16px;
+    border: none;
+    background-color: #F0F4FF;
+    font-family: inherit;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.name {
+    margin-top: 50px;
+}
+
+.confirmed,
+.death,
+.heal {
+    letter-spacing: 2.5px;
+}
+
+
+/* .cloader-cont {
+    background-color: #555;
+    padding: 16px; */
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #555;
+    border-color: #555 transparent #555 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

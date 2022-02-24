@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 datas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <header class="site-header container">
+        <a href="#" class="logo">
+            <img src="./covid-img.png" width="50" height="50" alt="logo"> Covid-19 results
+        </a>
+        <ul class="header-nav">
+            <li class="header-item"><a href="#" class="header-link">Home</a></li>
+            <li class="header-item"><a href="#" class="header-link">News</a></li>
+            <li class="header-item"><a href="#" class="header-link">Contact</a></li>
+        </ul>
+    </header>
+    <section class="mains-section container">
+        <div class="lds-dual-ring  cloader-cont" id="loader"></div>
+        <div class="main-cont hidden">
+            <form action="" id="form">
+                <input type="text" id="input" placeholder="Search country">
+                <button id="searchBtn">search</button>
+            </form>
+            <h1 class="name">
+                Country name : <span id="countName"></span>
+            </h1>
+            <div class="datas">
+                <h3 class="confirmed">Confirmed: <span id="confirmed"></span></h3>
+                <h3 class="death">Death: <span id="death"></span></h3>
+                <h3 class="heal">Healed: <span id="heal"></span></h3>
+            </div>
+        </div>
+    </section>
+
+    <script src="jQuery.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -132,3 +132,16 @@ body {
         transform: rotate(360deg);
     }
 }
+
+@media (max-width:400px) {
+    .site-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header-nav {
+        margin-top: 25px;
+    }
+    #input {
+        margin-bottom: 25px;
+    }
+}

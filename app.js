@@ -27,6 +27,8 @@ async function requestApi(url) {
 
             if (!(req.status == 200)) {
                 alert('Davlat nomini tekshiring')
+                loader.classList.add('hidden')
+                main.classList.remove('hidden')
 
             }
             throw new Error('Xatolik mavjud')

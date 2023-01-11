@@ -49,8 +49,12 @@ const heal = document.getElementById('heal')
 const confirmed = document.getElementById('confirmed')
 
 function getDatas(data) {
-    loader.classList.add('hidden')
-    main.classList.remove('hidden')
+    if(data){
+    
+        loader.classList.add('hidden')
+        main.classList.remove('hidden')
+    } else alert("Qandaydir xato yuzb berdi")
+    
     confirmed.innerHTML = data.confirmed.value
     death.innerHTML = data.deaths.value
     heal.innerHTML = data.recovered.value

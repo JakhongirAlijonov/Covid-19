@@ -39,7 +39,8 @@ async function requestApi(url) {
         getDatas(data)
     } catch (err) {
         console.log(err.message);
-
+        loader.classList.add('hidden')
+        alert("Qandaydir xato yuzb berdi")
     }
 }
 
